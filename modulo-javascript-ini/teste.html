@@ -15,6 +15,21 @@
 
     <button onclick="this.innerHTML = prompt('Nome do Botão');">Fazer ação</button>
 
+    <button onclick="fazerAcao()">Testar função</button>
+
+    <script>
+
+        function fazerAcao(){
+             var area = document.getElementById('area');
+             var texto = prompt('Digite o texto')
+
+             area.innerHTML = texto;
+
+        }
+    
+    
+    </script>
+
     
 </body>
 </html>
