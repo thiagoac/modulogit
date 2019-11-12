@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulando estilos</title>
+</head>
+<body>
+
+    <h3>Manipulando Elementos</h3>
+
+    <button type="button" onclick="modificaEstilo('green')" >Verde</button>
+    <button type="button" onclick="modificaEstilo('red')" >Vermelho</button>
+    <button type="button" onclick="modificaEstilo('blue')" >Azul</button>
+
+    <hr>
+
+    <div id="quadrado" style="border:solid #111111;width: 150px;height: 150px;"></div>
+
+    <script>
+
+        function modificaEstilo(cordefundo){
+            //alert(cordefundo)
+            document.getElementById('quadrado').style.background = cordefundo
+        }
+    
+    
+    </script>
+
+    
+</body>
+</html>
