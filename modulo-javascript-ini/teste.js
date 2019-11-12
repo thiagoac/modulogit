@@ -1,4 +1,7 @@
-//let nome = prompt('Qual é o seu nome')
-//console.log(nome)
+var a = 'Thiago'
 
-document.write("teste")
+if (a = 'Thiago') {
+    console.log('certo')
+} else{
+    console.log('erado')
+}
