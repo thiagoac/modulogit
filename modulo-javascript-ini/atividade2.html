@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .testeFocus{
+            background: yellow;
+        }
+
+        .formValido{
+            background: green;
+        }
+
+        .formErro{
+            background: red;
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <h1>Validação de Form</h1>
+
+    <input id="form" onfocus="mudaCor()" onblur="validaForm()" type="text">
+
+    <script>
+
+        function mudaCor(){
+            //document.getElementById('form').className = 'testeFocus'
+            document.getElementById('form').style.background = 'yellow'
+        }
+
+        function validaForm(){
+            var valor = document.getElementById('form').value
+
+            if(valor.length >= 3){
+
+                //document.getElementById('form').className = 'formValido'
+                document.getElementById('form').style.background = 'green'
+
+            }else{
+                //document.getElementById('form').className = 'formErro'
+                document.getElementById('form').style.background = 'red'
+            }
+
+        }
+    
+    
+    </script>
+    
+
+
+
+    
+</body>
+</html>
